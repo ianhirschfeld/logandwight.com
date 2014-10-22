@@ -1,0 +1,30 @@
+%h1 Logan Dwight
+
+.bio
+  .headshot
+  %p
+    %strong Hello!
+    %br>
+    I’m a designer, writer, and artist living in San Francisco, California. I use technology to create immersive experiences. I not-so-secretly think that being plugged in to
+    %em The Matrix
+    would be the coolest thing ever.
+    %br>
+    %br>
+    I'm currently working as the creative director at
+    = succeed '.' do
+      %a{href: 'http://www.thesoapcollective.com', target: '_blank'}
+        %strong> The Soap Collective
+    Our latest project is a group storytelling game called
+    = succeed '.' do
+      %a{href: 'http://www.roleapp.com', target: '_blank'}
+        %strong> Role
+
+.blog
+  %h2 Read More On
+  %a.btn-blog{href: 'http://kulturekeeper.com', target: '_blank'} My Blog
+
+%ul
+  %li>
+    %a.icon-twitter-circled.social-icon{href: 'https://twitter.com/logandwight', target: '_blank'}>
+  %li>
+    %a.icon-facebook-circled.social-icon{href: 'https://facebook.com/logan.dwight', target: '_blank'}>
