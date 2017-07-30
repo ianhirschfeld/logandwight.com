@@ -1,0 +1,316 @@
+$max-page-width: 1000px;
+$responsive-max-page-width: $max-page-width - 1;
+$grid-size: 18px;
+$grid-size-half: $grid-size / 2;
+$grid-size-double: $grid-size * 2;
+$headshot-size: 72px;
+$testimonial-headshot-size: 72px;
+
+$font-family-futura: 'futura-pt', Helvetica, sans-serif;
+$font-futura-spacing: 13px;
+
+$black: #000;
+$white: #fff;
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-family: $font-family-futura;
+  font-size: 18px;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  line-height: 1.3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+// ==================================================
+// FONTS & TEXT
+// ==================================================
+.font-futura-400 {
+  font-family: $font-family-futura;
+  font-weight: 400;
+}
+
+.font-futura-700 {
+  font-family: $font-family-futura;
+  font-weight: 700;
+}
+
+.font-size-small {
+  font-size: 0.778rem;
+}
+
+.text-indent {
+  letter-spacing: $font-futura-spacing;
+  text-indent: $font-futura-spacing;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.is-bold {
+  font-weight: bold;
+}
+
+// ==================================================
+// HELPERS
+// ==================================================
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.float-l {
+  float: left;
+}
+
+.float-r {
+  float: right;
+}
+
+.clearfix {
+  &:after {
+    display: table;
+    content: '';
+    clear: both;
+  }
+}
+
+.text-overflow {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+.is-max-width {
+  width: 100%;
+  max-width: $max-page-width;
+  margin: 0 auto;
+}
+
+// ==================================================
+// PAGE ELEMENTS
+// ==================================================
+.page-content {
+  padding: ($grid-size * 4) $grid-size-half;
+}
+
+.page-header {}
+
+.page-body {}
+
+.page-section {
+  margin-top: $grid-size * 4;
+}
+
+.name {
+  margin-bottom: $grid-size-half;
+}
+
+.headshot {
+  width: $headshot-size;
+  height: $headshot-size;
+  margin: ($grid-size-double - 5) auto $grid-size-double;
+  background: url('../images/LoganDwightHeadshot.jpg') no-repeat center center;
+  background-size: $headshot-size;
+  border-radius: $headshot-size / 2;
+}
+
+.location {
+  font-style: italic;
+}
+
+.bio {
+  width: 100%;
+  max-width: 676px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-button {
+  margin-top: $grid-size * 2.5;
+  padding: $grid-size;
+  display: inline-block;
+  border: 1px solid $black;
+  letter-spacing: $font-futura-spacing - 2;
+  text-indent: $font-futura-spacing - 2;
+
+  &:hover,
+  &:focus {
+    background: $black;
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+.section-title {}
+
+// ==================================================
+// PROJECTS
+// ==================================================
+.projects-list {
+  margin: $grid-size-double -$grid-size-half 0 -$grid-size-half;
+}
+
+.projects-list-item {
+  padding: 0 ($grid-size / 4);
+  display: inline-block;
+  vertical-align: top;
+}
+
+.projects-list-link {
+  width: 241px;
+  height: 504px;
+  display: block;
+  position: relative;
+  z-index: 10;
+
+  &:hover,
+  &:focus {
+    .projects-list-overlay-container {
+      opacity: 1;
+    }
+  }
+}
+
+.projects-list-background,
+.projects-list-overlay-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.projects-list-background {
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 241px 504px;
+}
+
+.projects-list-overlay-container {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.85);
+  z-index: 2;
+  opacity: 0;
+}
+
+.projects-list-overlay {
+  width: 100%;
+  padding: 0 $grid-size-double;
+}
+
+.projects-list-title {}
+
+.projects-list-body {
+  padding: $grid-size 0;
+}
+
+// ==================================================
+// TESTIMONIALS
+// ==================================================
+.testimonials-list {
+  margin-top: $grid-size-double;
+}
+
+.testimonials-list-item {
+  margin-bottom: $grid-size-double;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.testimonials-list-body-container {
+  .testimonials-list-item:nth-child(odd) & {
+    padding-left: $testimonial-headshot-size + $grid-size-half;
+  }
+
+  .testimonials-list-item:nth-child(even) & {
+    padding-right: $testimonial-headshot-size + $grid-size-half;
+  }
+}
+
+.testimonials-list-headshot {
+  width: $testimonial-headshot-size;
+  height: $testimonial-headshot-size;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: $testimonial-headshot-size;
+  border-radius: $testimonial-headshot-size / 2;
+
+  .testimonials-list-item:nth-child(odd) & {
+    float: left;
+  }
+
+  .testimonials-list-item:nth-child(even) & {
+    float: right;
+  }
+}
+
+.testimonials-list-body,
+.testimonials-list-name {
+  font-size: 1rem;
+}
+
+.testimonials-list-body {}
+
+.testimonials-list-name {
+  margin-top: $grid-size;
+}
+
+.testimonials-list-role {
+  font-style: italic;
+}
+
+// ==================================================
+// RESPONSIVE
+// ==================================================
+@media only screen and (max-width: $responsive-max-page-width) {}

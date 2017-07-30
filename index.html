@@ -1,0 +1,48 @@
+---
+layout: home
+---
+<header class="page-header text-center">
+  <h1 class="name text-indent text-upper is-bold">Logan Dwight</h1>
+  <p class="location font-size-small">San Francisco, CA - Brooklyn, NY</p>
+  <div class="headshot"></div>
+  <p class="bio font-size-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lectus erat, ornare a lectus quis, tristique lacinia nulla. Fusce vestibulum enim ac lacus hendrerit consectetur. Praesent et vehicula nibh. Maecenas tempus nibh eget est rhoncus, eget volutpat ipsum mollis. Sed accumsan odio id tellus feugiat consectetur. Integer sit amet euismod quam. Pellentesque ac nulla mauris. In tempus tellus volutpat nibh vehicula, vel sollicitudin mi viverra. Pellentesque sit amet eleifend velit. Vestibulum non mi sit amet nisl rutrum mollis. Quisque venenatis, urna eu porttitor auctor, turpis leo posuere nisi, eu sagittis ante libero nec dui. Nunc dapibus nec dol…or nec pretium. Duis venenatis nisi sed ultricies ornare. Pellentesque et mi sed risus lacinia elementum in nec dolor. Vivamus eu tincidunt eros, eu accumsan velit. Vestibulum vitae libero sapien.</p>
+  <a class="contact-button text-upper font-size-small is-bold" href="mailto:{{ site.email }}?subject=Hey%Logan!">Contact Me</a>
+</header>
+
+<article class="page-body">
+  <section class="page-section">
+    <h2 class="section-title text-upper text-indent text-center is-bold">Work</h2>
+    <ul class="projects-list list-reset">
+      {% for project in site.data.projects %}
+        <li class="projects-list-item">
+          <a class="projects-list-link" href="#">
+            <div class="projects-list-background" style="background-image:url('/images/{{ project.tile_image }}')"></div>
+            <div class="projects-list-overlay-container">
+              <div class="projects-list-overlay text-center">
+                <h3 class="projects-list-title text-indent text-upper is-bold">{{ project.title }}</h3>
+                <p class="projects-list-body font-size-small">{{ project.description }}</p>
+                <p class="font-size-small is-bold">Learn More</p>
+              </div>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="page-section">
+    <h2 class="section-title text-upper text-indent text-center is-bold">Testimonials</h2>
+    <ul class="testimonials-list list-reset">
+      {% for testimonial in site.data.testimonials %}
+        <li class="testimonials-list-item clearfix">
+          <div class="testimonials-list-headshot" style="background-image:url('/images/{{ testimonial.headshot }}')"></div>
+          <div class="testimonials-list-body-container">
+            <p class="testimonials-list-body">"{{ testimonial.body }}"</p>
+            <p class="testimonials-list-name is-bold">{{ testimonial.name }}</p>
+            <p class="testimonials-list-role font-size-small">{{ testimonial.role }}</p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+</article>
