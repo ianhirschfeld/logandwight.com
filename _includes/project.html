@@ -1,0 +1,36 @@
+<header class="page-header text-center has-gutter clearfix is-project">
+  <h1 class="name text-indent text-upper is-bold float-l"><a href="/">Logan Dwight</a></h1>
+  <a class="contact-button text-upper font-size-small is-bold float-r" href="mailto:{{ site.email }}?subject=Hey%Logan!">Contact Me</a>
+</header>
+
+<article class="page-body">
+  <section class="page-section has-gutter">
+    <div class="project-hero" style="background-image:url('/images/{{ project.hero_image }}')"></div>
+    <p class="project-description font-size-small">{{ project.description }}</p>
+    <p class="project-responsibilities font-size-small"><span class="is-bold">Responsibilities:</span><br />{{ project.responsibilities }}</p>
+    {% if project.youtube_id %}
+      <div class="video-container">
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/{{ project.youtube_id }}?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+    {% endif %}
+    {% if project.vimeo_id %}
+      <div class="video-container">
+        <iframe src="https://player.vimeo.com/video/{{ project.vimeo_id }}?title=0&amp;byline=0&amp;portrait=0" width="853" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    {% endif %}
+    <ul class="project-images-list list-reset">
+      {% if project.gifs %}
+        {% for gif in project.gifs %}
+          <li class="project-images-item {{ project.gif_class }}">
+            <a href="/images/{{ gif.path }}"><img src="/images/loading/{{ gif.loading_image }}" data-src="/images/{{ gif.path }}" alt="{{ gif.title }}" /></a>
+          </li>
+        {% endfor %}
+      {% endif %}
+      {% for image in project.images %}
+        <li class="project-images-item {{ project.image_class }}">
+          <a href="/images/{{ image.path }}"><img src="/images/loading/{{ image.loading_image }}" data-src="/images/{{ image.path }}" alt="{{ image.title }}" /></a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+</article>

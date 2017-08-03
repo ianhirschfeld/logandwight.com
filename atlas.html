@@ -1,0 +1,11 @@
+---
+title: Atlas
+description: Atlas
+layout: home
+---
+{% for p in site.data.projects %}
+  {% if p.url == "atlas" %}
+    {% assign project = p %}
+  {% endif %}
+{% endfor %}
+{% include project.html %}

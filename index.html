@@ -1,7 +1,7 @@
 ---
 layout: home
 ---
-<header class="page-header text-center">
+<header class="page-header text-center has-gutter">
   <h1 class="name text-indent text-upper is-bold">Logan Dwight</h1>
   <p class="location font-size-small">San Francisco, CA - Brooklyn, NY</p>
   <div class="headshot"></div>
@@ -12,25 +12,27 @@ layout: home
 <article class="page-body">
   <section class="page-section">
     <h2 class="section-title text-upper text-indent text-center is-bold">Work</h2>
-    <ul class="projects-list list-reset">
-      {% for project in site.data.projects %}
-        <li class="projects-list-item">
-          <a class="projects-list-link" href="#">
-            <div class="projects-list-background" style="background-image:url('/images/{{ project.tile_image }}')"></div>
-            <div class="projects-list-overlay-container">
-              <div class="projects-list-overlay text-center">
-                <h3 class="projects-list-title text-indent text-upper is-bold">{{ project.title }}</h3>
-                <p class="projects-list-body font-size-small">{{ project.description }}</p>
-                <p class="font-size-small is-bold">Learn More</p>
+    <div class="projects-list-container">
+      <ul class="projects-list list-reset text-center">
+        {% for project in site.data.projects %}
+          <li class="projects-list-item">
+            <a class="projects-list-link" href="/{{ project.url }}">
+              <div class="projects-list-background" style="background-image:url('/images/{{ project.tile_image }}')"></div>
+              <div class="projects-list-overlay-container">
+                <div class="projects-list-overlay text-center">
+                  <h3 class="projects-list-title text-indent text-upper is-bold">{{ project.title }}</h3>
+                  <p class="projects-list-body font-size-small">{{ project.tile_description }}</p>
+                  <p class="font-size-small is-bold">Learn More</p>
+                </div>
               </div>
-            </div>
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
   </section>
 
-  <section class="page-section">
+  <section class="page-section has-gutter">
     <h2 class="section-title text-upper text-indent text-center is-bold">Testimonials</h2>
     <ul class="testimonials-list list-reset">
       {% for testimonial in site.data.testimonials %}
