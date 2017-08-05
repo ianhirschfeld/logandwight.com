@@ -1,4 +1,0 @@
-logandwight.com
-===============
-
-Personal site.
