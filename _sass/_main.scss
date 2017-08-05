@@ -290,8 +290,13 @@ a {
   margin-top: $grid-size-double;
 }
 
-.project-responsibilities {
+.project-responsibilities,
+.project-link {
   margin-top: $grid-size;
+}
+
+.project-images-section {
+  margin-top: 0;
 }
 
 .video-container {
@@ -326,8 +331,15 @@ a {
 .grid-three {
   width: 1/3 * 100%;
 }
-.grid-two {
+
+.grid-two,
+.grid-two-gutter {
   width: 50%;
+}
+
+.grid-two-gutter {
+  padding-left: ($grid-size / 4);
+  padding-right: ($grid-size / 4);
 }
 
 // ==================================================

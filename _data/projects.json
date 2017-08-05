@@ -27,6 +27,7 @@
       {"path": "atlas/AtlasStills09.jpg", "loading_image": "LoadingRect.png", "title": "Atlas Production Still"},
     ],
     "image_class": "grid-two",
+    "image_section_class": "has-gutter",
   },
   {
     "url": "beyond_tokyo",
