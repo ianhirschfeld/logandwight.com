@@ -31,20 +31,4 @@ layout: home
       </ul>
     </div>
   </section>
-
-  <section class="page-section has-gutter">
-    <h2 class="section-title text-upper text-indent text-center is-bold">Testimonials</h2>
-    <ul class="testimonials-list list-reset">
-      {% for testimonial in site.data.testimonials %}
-        <li class="testimonials-list-item clearfix">
-          <div class="testimonials-list-headshot" style="background-image:url('/images/{{ testimonial.headshot }}')"></div>
-          <div class="testimonials-list-body-container">
-            <p class="testimonials-list-body">"{{ testimonial.body }}"</p>
-            <p class="testimonials-list-name is-bold">{{ testimonial.name }}</p>
-            <p class="testimonials-list-role font-size-small">{{ testimonial.role }}</p>
-          </div>
-        </li>
-      {% endfor %}
-    </ul>
-  </section>
 </article>
