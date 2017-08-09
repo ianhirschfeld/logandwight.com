@@ -1,0 +1,11 @@
+---
+title: Never Bout Us
+description: A 360 music video that dives deep into the mind of a troubled artist following a brutal breakup.
+layout: home
+---
+{% for p in site.data.projects %}
+  {% if p.url == "neverboutus" %}
+    {% assign project = p %}
+  {% endif %}
+{% endfor %}
+{% include project.html %}

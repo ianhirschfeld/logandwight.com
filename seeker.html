@@ -1,0 +1,11 @@
+---
+title: Seeker
+description: Science and discovery through educational immersive 360 video content.
+layout: home
+---
+{% for p in site.data.projects %}
+  {% if p.url == "seeker" %}
+    {% assign project = p %}
+  {% endif %}
+{% endfor %}
+{% include project.html %}

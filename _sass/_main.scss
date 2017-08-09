@@ -187,7 +187,6 @@ a {
   width: 100%;
   max-width: 676px;
   margin: 0 auto;
-  text-align: left;
 }
 
 .contact-button {
@@ -266,6 +265,7 @@ a {
   background: rgba(255,255,255,0.85);
   z-index: 2;
   opacity: 0;
+  transition: opacity .25s;
 }
 
 .projects-list-overlay {
@@ -337,9 +337,17 @@ a {
   width: 50%;
 }
 
-.grid-two-gutter {
+.grid-two-gutter,
+.grid-four-gutter {
   padding-left: ($grid-size / 4);
   padding-right: ($grid-size / 4);
+  padding-top: ($grid-size / 4);
+  padding-bottom: ($grid-size / 4);
+}
+
+.grid-four,
+.grid-four-gutter {
+  width: 25%;
 }
 
 // ==================================================

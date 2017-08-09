@@ -1,0 +1,11 @@
+---
+title: Weird Catalog
+description: A curated collection of high-quality inspirational media, both popular and obscure.
+layout: home
+---
+{% for p in site.data.projects %}
+  {% if p.url == "weirdcatalog" %}
+    {% assign project = p %}
+  {% endif %}
+{% endfor %}
+{% include project.html %}

@@ -1,0 +1,11 @@
+---
+title: VR Love Letters
+description: See a place through the eyes of people who live there. An intimate collection of personal stories.
+layout: home
+---
+{% for p in site.data.projects %}
+  {% if p.url == "vrll" %}
+    {% assign project = p %}
+  {% endif %}
+{% endfor %}
+{% include project.html %}

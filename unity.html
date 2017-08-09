@@ -1,0 +1,11 @@
+---
+title: Finding Unity
+description: Gaze-based interactive 360 video experience. Shot on GoPro Odyssey.
+layout: home
+---
+{% for p in site.data.projects %}
+  {% if p.url == "unity" %}
+    {% assign project = p %}
+  {% endif %}
+{% endfor %}
+{% include project.html %}

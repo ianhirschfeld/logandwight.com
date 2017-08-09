@@ -1,0 +1,11 @@
+---
+title: Beyond Tokyo
+description: Fantasy virtual travel experience, using narrative to teach about Japanese culture.
+layout: home
+---
+{% for p in site.data.projects %}
+  {% if p.url == "beyondtokyo" %}
+    {% assign project = p %}
+  {% endif %}
+{% endfor %}
+{% include project.html %}

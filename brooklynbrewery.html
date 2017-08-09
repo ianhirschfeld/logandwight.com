@@ -1,0 +1,11 @@
+---
+title: Brewery Tour
+description: 360 video tour of Brooklyn Brewery, created as part of the Beer Mansion event series.
+layout: home
+---
+{% for p in site.data.projects %}
+  {% if p.url == "brooklynbrewery" %}
+    {% assign project = p %}
+  {% endif %}
+{% endfor %}
+{% include project.html %}

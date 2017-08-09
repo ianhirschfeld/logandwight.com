@@ -1,0 +1,11 @@
+---
+title: Role
+description: A group storytelling party game, like streamlined D&D in your pocket.
+layout: home
+---
+{% for p in site.data.projects %}
+  {% if p.url == "role" %}
+    {% assign project = p %}
+  {% endif %}
+{% endfor %}
+{% include project.html %}

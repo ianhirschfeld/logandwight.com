@@ -1,0 +1,11 @@
+---
+title: Profile
+description: Interactive “look book” introducing The Soap Collective team.
+layout: home
+---
+{% for p in site.data.projects %}
+  {% if p.url == "profile" %}
+    {% assign project = p %}
+  {% endif %}
+{% endfor %}
+{% include project.html %}
