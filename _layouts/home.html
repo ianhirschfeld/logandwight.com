@@ -16,7 +16,35 @@
     <link rel="stylesheet" href="{{ "/css/app.css" | prepend: site.baseurl }}">
   </head>
   <body>
-    <div class="page-content is-max-width">{{ content }}</div>
+    <div class="page-content is-max-width">
+      {{ content }}
+      <footer>
+        <section class="page-section has-gutter">
+          <ul class="contact-list list-reset text-center">
+            <li class="contact-list-item font-rift-">
+              <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
+                <span class="contact-list-icon icon-twitter"></span><span class="contact-list-text">@{{ site.twitter_username }}</span>
+              </a>
+            </li>
+            <li class="contact-list-item font-rift-">
+              <a href="https://www.facebook.com/{{ site.facebook_username }}" target="_blank">
+                <span class="contact-list-icon icon-facebook"></span><span class="contact-list-text">{{ site.facebook_username }}</span>
+              </a>
+            </li>
+            <li class="contact-list-item font-rift-">
+              <a href="https://www.instagram.com/{{ site.instagram_username }}" target="_blank">
+                <span class="contact-list-icon icon-instagram"></span><span class="contact-list-text">{{ site.instagram_username }}</span>
+              </a>
+            </li>
+            <li class="contact-list-item font-rift-">
+              <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank">
+                <span class="contact-list-icon icon-linkedin"></span><span class="contact-list-text">{{ site.linkedin_username }}</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </footer>
+    </div>
     <script src="https://use.typekit.net/{{ site.typekit_id }}.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
     <script src="{{ "/js/jquery.unveil.js" | prepend: site.baseurl }}" type="text/javascript"></script>

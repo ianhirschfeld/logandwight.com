@@ -47,6 +47,7 @@ layout: home
 {
   "url": "",
   "title": "",
+  "title2": "",
   "tile_image": "",
   "tile_description": "",
   "hero_image": "",

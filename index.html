@@ -5,8 +5,8 @@ layout: home
   <h1 class="name text-indent text-upper is-bold">Logan Dwight</h1>
   <p class="location font-size-small">San Francisco, CA - Brooklyn, NY</p>
   <div class="headshot"></div>
-  <p class="bio font-size-small text-center">I’m a designer, writer, creative director, and VR consultant with a passion for the media arts. I use technology to create immersive experiences. I not-so-secretly think that being plugged in to <i>The Matrix</i> would be the coolest thing ever.</p>
-  <a class="contact-button text-upper font-size-small is-bold" href="mailto:{{ site.email }}?subject=Hey%Logan!">Contact Me</a>
+  <p class="bio font-size-small">I’m a designer, writer, creative director, and VR consultant with a passion for the media arts. I use technology to create immersive experiences. I not-so-secretly think that being plugged in to <i>The Matrix</i> would be the coolest thing ever.</p>
+  <a class="contact-button text-upper font-size-small is-bold" href="mailto:{{ site.email }}?subject={{ site.email_subject }}">Contact Me</a>
 </header>
 
 <article class="page-body">
@@ -20,7 +20,10 @@ layout: home
               <div class="projects-list-background" style="background-image:url('/images/{{ project.tile_image }}')"></div>
               <div class="projects-list-overlay-container">
                 <div class="projects-list-overlay text-center">
-                  <h3 class="projects-list-title text-indent text-upper is-bold">{{ project.title }}</h3>
+                  <h3 class="projects-list-title text-indent text-upper is-bold {% if project.title2 and project.title2 != "" %}no-indent{% endif %}">{{ project.title }}</h3>
+                  {% if project.title2 and project.title2 != "" %}
+                    <h3 class="projects-list-title text-indent text-upper is-bold">{{ project.title2 }}</h3>
+                  {% endif %}
                   <p class="projects-list-body font-size-small">{{ project.tile_description }}</p>
                   <p class="font-size-small is-bold">Learn More</p>
                 </div>

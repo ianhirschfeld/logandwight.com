@@ -41,7 +41,8 @@
   },
   {
     "url": "beyondtokyo",
-    "title": "Beyond Tokyo",
+    "title": "Beyond",
+    "title2": "Tokyo",
     "tile_image": "tiles/TileBT.jpg",
     "tile_description": "Fantasy virtual travel experience, using narrative to teach about Japanese culture.",
     "hero_image": "hero/HeroBT.jpg",
@@ -115,7 +116,8 @@
   },
   {
     "url": "neverboutus",
-    "title": "Never Bout Us",
+    "title": "Never",
+    "title2": "Bout Us",
     "tile_image": "tiles/TileNBU.jpg",
     "tile_description": "A 360 music video that dives deep into the mind of a troubled artist following a brutal breakup.",
     "hero_image": "hero/HeroNBU.jpg",
@@ -138,7 +140,8 @@
   },
     {
     "url": "unity",
-    "title": "Finding Unity",
+    "title": "Finding",
+    "title2": "Unity",
     "tile_image": "tiles/TileUnity.jpg",
     "tile_description": "Gaze-based interactive 360 video experience. Shot on GoPro Odyssey.",
     "hero_image": "hero/HeroUnity.jpg",
@@ -182,7 +185,8 @@
   },
       {
     "url": "brooklynbrewery",
-    "title": "Brewery Tour",
+    "title": "Brewery",
+    "title2": "Tour",
     "tile_image": "tiles/TileBrooklyn.jpg",
     "tile_description": "360 video tour of Brooklyn Brewery, created as part of the Beer Mansion event series.",
     "hero_image": "hero/HeroBrooklyn.jpg",
@@ -192,7 +196,8 @@
   },
       {
     "url": "vrll",
-    "title": "VR Love Letters",
+    "title": "VR Love",
+    "title2": "Letters",
     "tile_image": "tiles/TileVRLL.jpg",
     "tile_description": "See a place through the eyes of people who live there. An intimate collection of personal stories.",
     "hero_image": "hero/HeroVRLL.jpg",
@@ -204,7 +209,8 @@
   },
       {
     "url": "weirdcatalog",
-    "title": "Weird Catalog",
+    "title": "Weird",
+    "title2": "Catalog",
     "tile_image": "tiles/TileWeird.jpg",
     "tile_description": "A curated collection of high-quality inspirational media, both popular and obscure.",
     "hero_image": "hero/HeroWeird.jpg",
@@ -215,7 +221,8 @@
   },
       {
     "url": "cap1",
-    "title": "Capital One",
+    "title": "Capital",
+    "title2": "One",
     "tile_image": "tiles/TileC1.jpg",
     "tile_description": "A 360 video “customer story” that shows how Capital One helped a mother in need.",
     "hero_image": "hero/HeroCap1.jpg",
@@ -224,7 +231,8 @@
   },
       {
     "url": "charlesschwab",
-    "title": "Charles Schwab",
+    "title": "Charles",
+    "title2": "Schwab",
     "tile_image": "tiles/TileCharlesS.jpg",
     "tile_description": "VR Cafe installation for Impact 2016 conference, featuring a collection of curated high-end experiences.",
     "hero_image": "hero/HeroCharlesS.jpg",
