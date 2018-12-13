@@ -1,4 +1,27 @@
 [
+	{
+    "url": "littlstar",
+    "title": "Littlstar + Ara",
+    "tile_image": "tiles/TileLittlstar.jpg",
+    "tile_description": "Product Direction for the world's largest immersive video platform + emerging blockchain technologies.",
+    "hero_image": "hero/HeroLittlstar.jpg",
+    "description": "<i>Littlstar</i> is the world's largest immersive video platform, streaming 360 video on PlayStation, iOS, Android, AppleTV, Android TV, Daydream, and the web. In my time as Director of Product, I led the expansion and re-focusing of the company's core applications to provide high-demand features to <i>Littlstar's</i> core user base. This involved expanded 360 media player support, as well as support for additional formats such as legacy video and augmented reality assets. <br><br>Additionally, I led product direction on <i>Ara</i>, a new decentralized media distribution technology that was spun off to support the company's core business. Development of <i>Ara</i> consisted of a new blockchain protocol, peer-to-peer file sharing infrastructure, and decentralized file management application for end-users. I worked closely with principle leads across the engineering & business development teams to define the rules of the network, anticipate common use-cases based on user feedback, and design & plan the development of key supporting applications for the product's launch. <i>Ara</i> launched on the <i>Ethereum</i> network at the end of 2018.",
+    "responsibilities": "Director of Product, Project Management, UX Design, Visual Design, Branding, Copywriting",
+    "link_text": "www.littlstar.info",
+    "link_url": "http://www.littlstar.info",
+    "link2_text": "www.ara.one",
+    "link2_url": "http://www.ara.one",
+    "images": [
+      {"path": "littlstar/LittlstarSplash01.jpg", "loading_image": "LoadingRect.png", "title": "Littlstar Splash"},
+      {"path": "littlstar/LittlstarProducts01.jpg", "loading_image": "LoadingRect.png", "title": "Littlstar Products"},
+      {"path": "littlstar/AraSplash01.jpg", "loading_image": "LoadingRect.png", "title": "Ara Splash"},
+      {"path": "littlstar/AraFileManager01.jpg", "loading_image": "LoadingRect.png", "title": "Ara File Manager 1"},
+      {"path": "littlstar/AraFileManager02.jpg", "loading_image": "LoadingRect.png", "title": "Ara File Manager 2"},
+      {"path": "littlstar/AraFileManager03.jpg", "loading_image": "LoadingRect.png", "title": "Ara File Manager 3"},
+    ],
+    "image_class": "grid-two",
+    "image_section_class": "has-gutter",
+  },
   {
     "url": "atlas",
     "title": "Atlas",
