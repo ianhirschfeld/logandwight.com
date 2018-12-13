@@ -9,7 +9,12 @@
     <p class="project-description font-size-small">{{ project.description }}</p>
     <p class="project-responsibilities font-size-small"><span class="is-bold">Responsibilities:</span><br />{{ project.responsibilities }}</p>
     {% if project.link_text and project.link_text != "" and project.link_url and project.link_url != "" %}
-      <p class="project-link font-size-small is-bold"><a href="{{ project.link_url }}" target="_blank">{{ project.link_text }}</a></p>
+      <p class="project-link font-size-small is-bold">
+        <a href="{{ project.link_url }}" target="_blank">{{ project.link_text }}</a>
+        {% if project.link2_text and project.link2_text != "" and project.link2_url and project.link2_url != "" %}
+          <br /><a href="{{ project.link2_url }}" target="_blank">{{ project.link2_text }}</a>
+        {% endif %}
+      </p>
     {% endif %}
     {% if project.youtube_id and project.youtube_id != "" %}
       <div class="video-container">
