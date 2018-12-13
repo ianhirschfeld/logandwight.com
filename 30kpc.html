@@ -1,0 +1,11 @@
+---
+title: 30kpc
+description: Professional photography + multimedia collaborations.
+layout: home
+---
+{% for p in site.data.projects %}
+  {% if p.url == "30kpc" %}
+    {% assign project = p %}
+  {% endif %}
+{% endfor %}
+{% include project.html %}
